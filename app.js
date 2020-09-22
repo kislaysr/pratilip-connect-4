@@ -7,9 +7,12 @@ var passport = require('passport');
 
 LocalAPIKeyStrategy = require('passport-localapikey').Strategy;
 
+
+
+
 /** database connection */
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://localhost:27017/pollapp';
+var mongoDB = "mongodb+srv://admin:admin@cluster0.juxso.mongodb.net/connect_4?retryWrites=true&w=majority"; //'mongodb://localhost:27017/pollapp';
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
