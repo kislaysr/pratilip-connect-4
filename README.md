@@ -37,7 +37,7 @@ res = {
 }
 ```
 
-### /play/move/col/<colnum> ; method=GET; Request-Header: Authorization : Bearer uid  
+### /play/move/col/{colnum} ; method=GET; Request-Header: Authorization : Bearer uid  
 ```javascript
 res = {
     "error": null,
